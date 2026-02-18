@@ -17,6 +17,17 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@MBGlobalMarketing" />
     <meta name="twitter:image" content="/MB logo.png" />
+
+    <!-- SPA redirect handler for GitHub Pages -->
+    <script>
+      (function() {
+        var redirectPath = sessionStorage.getItem('redirectPath');
+        if (redirectPath) {
+          sessionStorage.removeItem('redirectPath');
+          history.replaceState(null, '', redirectPath);
+        }
+      })();
+    </script>
   </head>
 
   <body>
