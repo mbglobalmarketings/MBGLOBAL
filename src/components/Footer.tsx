@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowUpRight, Mail, MapPin } from "lucide-react";
+import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
 import { motion } from "framer-motion";
 
 const Footer = () => {
@@ -42,6 +42,9 @@ const Footer = () => {
             <div className="space-y-3">
               <a href="mailto:hello@mbglobal.com" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-accent transition-colors">
                 <Mail size={14} /> hello@mbglobal.com
+              </a>
+              <a href="tel:+919675944098" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-accent transition-colors">
+                <Phone size={14} /> +91 96759 44098
               </a>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <MapPin size={14} /> New York · London · Dubai

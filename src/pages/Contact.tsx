@@ -76,7 +76,7 @@ const Contact = () => {
               <div className="space-y-6 mb-10">
                 {[
                   { icon: Mail, label: "hello@mbglobalmarketing.com" },
-                  { icon: Phone, label: "+1 (555) 000-1234" },
+                  { icon: Phone, label: "+91 96759 44098" },
                   { icon: MapPin, label: "New York • London • Remote" },
                 ].map((item, i) => (
                   <FadeIn key={item.label} delay={0.1 + i * 0.1}>
