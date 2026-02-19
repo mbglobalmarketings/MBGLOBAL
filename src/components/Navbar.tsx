@@ -61,13 +61,13 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-6">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex items-center justify-between h-20 md:h-24">
           {/* Logo */}
           <Link to="/" className="relative z-10 flex items-center">
             <img 
               src="/MB logo.png" 
               alt="MB Global Marketing" 
-              className="h-24 md:h-32 w-auto object-contain hover:opacity-90 transition-opacity"
+              className="h-32 md:h-40 w-auto object-contain hover:opacity-90 transition-opacity"
             />
           </Link>
 
