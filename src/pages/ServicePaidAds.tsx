@@ -14,16 +14,16 @@ const adTypes = [
 
 const metrics = [
   { value: "72%", label: "Lower CAC", desc: "Average reduction in customer acquisition cost" },
-  { value: "$4.2M", label: "Ad Spend Managed", desc: "Monthly across all client accounts" },
+  { value: "₹32Cr", label: "Ad Spend Managed", desc: "Monthly across all client accounts" },
   { value: "8.5x", label: "Average ROAS", desc: "Return on ad spend across campaigns" },
   { value: "2.1B", label: "Impressions", desc: "Generated for clients annually" },
 ];
 
 const differentiators = [
-  { title: "AI-Powered Bidding", desc: "Custom algorithms that optimize bids in real-time for maximum ROI on every dollar." },
+  { title: "AI-Powered Bidding", desc: "Custom algorithms that optimize bids in real-time for maximum ROI on every rupee." },
   { title: "Creative Testing Lab", desc: "Continuous A/B testing of ad creatives, copy, and landing pages for peak performance." },
   { title: "Cross-Platform Attribution", desc: "See the full customer journey across every touchpoint with advanced attribution modeling." },
-  { title: "Transparent Reporting", desc: "No hidden fees. See exactly where every dollar goes with real-time performance dashboards." },
+  { title: "Transparent Reporting", desc: "No hidden fees. See exactly where every rupee goes with real-time performance dashboards." },
 ];
 
 const ServicePaidAds = () => (
@@ -42,7 +42,7 @@ const ServicePaidAds = () => (
               <Target size={14} /><span>Paid Advertising</span>
             </motion.div>
             <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3, duration: 0.7 }} className="font-display text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-6">
-              Every Ad Dollar, <span className="gradient-text">Maximized</span>
+              Every Ad Rupee, <span className="gradient-text">Maximized</span>
             </motion.h1>
             <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }} className="text-lg text-muted-foreground max-w-xl mb-10 leading-relaxed">
               Precision-targeted campaigns across Google, Meta, and beyond. We don't burn budgets — we multiply them.

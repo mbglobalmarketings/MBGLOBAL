@@ -47,7 +47,7 @@ const Footer = () => {
                 <Phone size={14} /> +91 96759 44098
               </a>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <MapPin size={14} /> New York · London · Dubai
+                <MapPin size={14} /> Mumbai · Bangalore · Delhi
               </div>
             </div>
           </div>

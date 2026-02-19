@@ -6,12 +6,12 @@ import teamImage from "@/assets/team-work.jpg";
 import cultureImage from "@/assets/about-culture.jpg";
 
 const team = [
-  { name: "Michael Bates", role: "Founder & CEO", specialty: "Growth Strategy" },
-  { name: "Aria Patel", role: "Head of Marketing", specialty: "Performance Marketing" },
-  { name: "James Okafor", role: "Creative Director", specialty: "Brand & Design" },
-  { name: "Sophie Müller", role: "Head of SEO", specialty: "Technical SEO" },
-  { name: "Liam Chen", role: "Ads Strategist", specialty: "Paid Media" },
-  { name: "Emma Rodriguez", role: "Content Lead", specialty: "Content Strategy" },
+  { name: "Manish Bansal", role: "Founder & CEO", specialty: "Growth Strategy" },
+  { name: "Priya Sharma", role: "Head of Marketing", specialty: "Performance Marketing" },
+  { name: "Arjun Mehta", role: "Creative Director", specialty: "Brand & Design" },
+  { name: "Sneha Desai", role: "Head of SEO", specialty: "Technical SEO" },
+  { name: "Rohan Kumar", role: "Ads Strategist", specialty: "Paid Media" },
+  { name: "Kavya Reddy", role: "Content Lead", specialty: "Content Strategy" },
 ];
 
 const values = [
@@ -24,7 +24,7 @@ const values = [
 const timeline = [
   { year: "2019", title: "Founded", desc: "Started with a vision to build a different kind of agency." },
   { year: "2020", title: "First 50 Clients", desc: "Proved our model works across industries and scales." },
-  { year: "2022", title: "Global Expansion", desc: "Opened offices in London and expanded remote operations." },
+  { year: "2022", title: "Pan-India Expansion", desc: "Opened offices in Mumbai and Bangalore, expanded remote operations." },
   { year: "2024", title: "500+ Projects", desc: "Crossed 500 successful projects with 98% client retention." },
   { year: "2026", title: "AI-Powered Growth", desc: "Integrating AI tools for next-gen marketing automation." },
 ];

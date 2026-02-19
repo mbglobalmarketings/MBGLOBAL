@@ -77,7 +77,7 @@ const Contact = () => {
                 {[
                   { icon: Mail, label: "hello@mbglobalmarketing.com" },
                   { icon: Phone, label: "+91 96759 44098" },
-                  { icon: MapPin, label: "New York • London • Remote" },
+                  { icon: MapPin, label: "Mumbai • Bangalore • Remote" },
                 ].map((item, i) => (
                   <FadeIn key={item.label} delay={0.1 + i * 0.1}>
                     <div className="flex items-center gap-4">
@@ -149,10 +149,10 @@ const Contact = () => {
                       <label className="text-sm font-medium text-muted-foreground mb-2 block">Monthly Budget</label>
                       <select value={formData.budget} onChange={(e) => setFormData({ ...formData, budget: e.target.value })} className="w-full px-4 py-3.5 rounded-xl bg-muted/50 border border-border/50 text-foreground focus:outline-none focus:border-primary/50 focus:ring-2 focus:ring-primary/10 transition-all">
                         <option value="">Select range</option>
-                        <option value="5k-10k">$5k - $10k</option>
-                        <option value="10k-25k">$10k - $25k</option>
-                        <option value="25k-50k">$25k - $50k</option>
-                        <option value="50k+">$50k+</option>
+                        <option value="5L-10L">₹5L - ₹10L</option>
+                        <option value="10L-25L">₹10L - ₹25L</option>
+                        <option value="25L-50L">₹25L - ₹50L</option>
+                        <option value="50L+">₹50L+</option>
                       </select>
                     </div>
                     <div>

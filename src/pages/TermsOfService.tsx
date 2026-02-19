@@ -36,7 +36,7 @@ const sections = [
   },
   {
     title: "9. Governing Law",
-    content: `These Terms of Service shall be governed by and construed in accordance with the laws of the State of New York, without regard to its conflict of law provisions. Any disputes shall be resolved through binding arbitration in New York City.`,
+    content: `These Terms of Service shall be governed by and construed in accordance with the laws of India. The courts of Mumbai, Maharashtra shall have exclusive jurisdiction over any disputes arising from these terms.`,
   },
   {
     title: "10. Changes to Terms",

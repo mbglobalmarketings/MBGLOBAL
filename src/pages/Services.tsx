@@ -12,7 +12,7 @@ import webDevImage from "@/assets/service-web-dev.jpg";
 const services = [
   { icon: Users, title: "Social Media Marketing", desc: "Build engaged communities, create viral content, and drive social-first revenue across every major platform.", link: "/services/social-media", image: socialImage, tag: "Engagement", color: "from-purple-500/20 to-blue-500/20" },
   { icon: Search, title: "SEO", desc: "Data-driven search engine optimization that puts you at the top of every relevant search result.", link: "/services/seo", image: seoImage, tag: "Organic Growth", color: "from-yellow-500/20 to-orange-500/20" },
-  { icon: Target, title: "Paid Advertising", desc: "Precision-targeted campaigns with relentless optimization for maximum ROI on every ad dollar.", link: "/services/paid-ads", image: paidAdsImage, tag: "Paid Traffic", color: "from-pink-500/20 to-purple-500/20" },
+  { icon: Target, title: "Paid Advertising", desc: "Precision-targeted campaigns with relentless optimization for maximum ROI on every ad rupee.", link: "/services/paid-ads", image: paidAdsImage, tag: "Paid Traffic", color: "from-pink-500/20 to-purple-500/20" },
   { icon: Code, title: "Web Development", desc: "Performance-optimized websites with stunning visuals and buttery-smooth interactions.", link: "/services/web-development", image: webDevImage, tag: "Experience", color: "from-blue-500/20 to-cyan-500/20" },
 ];
 

@@ -30,17 +30,17 @@ const metrics = [
 ];
 
 const testimonials = [
-  { name: "Sarah Chen", role: "CEO, TechFlow", text: "MB Global transformed our digital presence completely. Revenue up 340% in 6 months.", avatar: "SC" },
-  { name: "Marcus Rivera", role: "Founder, ScaleUp", text: "The most strategic marketing team we've ever worked with. They don't just execute — they innovate.", avatar: "MR" },
-  { name: "Elena Kowalski", role: "CMO, NovaBrand", text: "Their approach to growth is surgical. Every dollar spent delivers measurable impact.", avatar: "EK" },
+  { name: "Rajesh Malhotra", role: "CEO, TechVista", text: "MB Global transformed our digital presence completely. Revenue up 340% in 6 months.", avatar: "RM" },
+  { name: "Anjali Nair", role: "Founder, ScaleUp India", text: "The most strategic marketing team we've ever worked with. They don't just execute — they innovate.", avatar: "AN" },
+  { name: "Vikram Patel", role: "CMO, BrandWorks", text: "Their approach to growth is surgical. Every rupee spent delivers measurable impact.", avatar: "VP" },
 ];
 
-const logos = ["TechFlow", "ScaleUp", "NovaBrand", "GrowthLab", "Apex Digital", "Quantum"];
+const logos = ["TechVista", "ScaleUp India", "BrandWorks", "GrowthLab", "InfoEdge", "ZenithTech"];
 
 const caseStudyPreviews = [
-  { title: "TechFlow SaaS", result: "+340% Traffic", category: "SEO", image: techflowImage },
-  { title: "ScaleUp Fintech", result: "72% Lower CAC", category: "Ads", image: scaleupImage },
-  { title: "NovaBrand D2C", result: "1M+ Impressions", category: "Social", image: novabrandImage },
+  { title: "TechVista SaaS", result: "+340% Traffic", category: "SEO", image: techflowImage },
+  { title: "ScaleUp India Fintech", result: "72% Lower CAC", category: "Ads", image: scaleupImage },
+  { title: "BrandWorks D2C", result: "1M+ Impressions", category: "Social", image: novabrandImage },
 ];
 
 const whyUsItems = [
@@ -59,25 +59,25 @@ const Index = () => {
   return (
     <div className="min-h-screen overflow-x-hidden">
       {/* HERO — Centered content with 3D background */}
-      <SectionWrapper className="relative min-h-screen flex items-center pt-20">
+      <SectionWrapper className="relative min-h-screen flex items-center pt-20 bg-[hsl(260,20%,5%)]">
         <motion.div ref={heroRef} style={{ y: heroY, opacity: heroOpacity }} className="absolute inset-0 z-0">
           <HeroScene />
         </motion.div>
-        <div className="absolute inset-0 z-[1] bg-gradient-to-t from-background via-background/40 to-background/20" />
-        <div className="absolute inset-0 z-[1] bg-gradient-to-r from-background/70 via-transparent to-background/70" />
+        <div className="absolute inset-0 z-[1] bg-gradient-to-t from-[hsl(260,20%,5%)] via-[hsl(260,20%,5%)]/40 to-[hsl(260,20%,5%)]/20" />
+        <div className="absolute inset-0 z-[1] bg-gradient-to-r from-[hsl(260,20%,5%)]/70 via-transparent to-[hsl(260,20%,5%)]/70" />
 
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-5xl mx-auto">
             {/* Top badge */}
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="flex justify-center mb-6">
-              <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full glass text-sm text-accent">
+              <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[hsl(260,25%,8%)]/40 backdrop-blur-xl border border-[hsl(260,20%,15%)]/50 text-sm text-accent">
                 <Sparkles size={14} /><span>Award-Winning Performance Marketing Agency</span>
               </div>
             </motion.div>
 
             {/* Main headline — massive & split */}
             <div className="text-center mb-6">
-              <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3, duration: 0.7 }} className="font-display text-6xl md:text-7xl lg:text-[7rem] xl:text-[8rem] font-bold leading-[0.95] tracking-tight">
+              <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3, duration: 0.7 }} className="font-display text-6xl md:text-7xl lg:text-[7rem] xl:text-[8rem] font-bold leading-[0.95] tracking-tight text-[hsl(0,0%,98%)]">
                 We Build
               </motion.h1>
               <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.45, duration: 0.7 }} className="font-display text-6xl md:text-7xl lg:text-[7rem] xl:text-[8rem] font-bold leading-[0.95] tracking-tight gradient-text">
@@ -87,20 +87,20 @@ const Index = () => {
 
             {/* Subheadline — two-column on desktop */}
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6 }} className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-10">
-              <p className="text-base md:text-lg text-muted-foreground leading-relaxed text-center md:text-right md:border-r md:border-border/30 md:pr-6">
+              <p className="text-base md:text-lg text-[hsl(260,10%,60%)] leading-relaxed text-center md:text-right md:border-r md:border-[hsl(260,20%,15%)]/30 md:pr-6">
                 We combine data science, creative storytelling, and cutting-edge technology to help brands dominate their markets.
               </p>
-              <p className="text-base md:text-lg text-muted-foreground leading-relaxed text-center md:text-left">
+              <p className="text-base md:text-lg text-[hsl(260,10%,60%)] leading-relaxed text-center md:text-left">
                 From SEO and paid media to full-stack web development — we're your end-to-end growth engine.
               </p>
             </motion.div>
 
             {/* CTAs */}
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.75 }} className="flex flex-wrap justify-center gap-4 mb-14">
-              <Link to="/contact" className="px-10 py-4 rounded-xl bg-accent text-accent-foreground font-bold text-base flex items-center gap-2 hover:opacity-90 transition-all glow-yellow">
+              <Link to="/contact" className="px-10 py-4 rounded-xl bg-accent text-[hsl(260,20%,5%)] font-bold text-base flex items-center gap-2 hover:opacity-90 transition-all glow-yellow">
                 Get Free Strategy Call <ArrowRight size={18} />
               </Link>
-              <Link to="/work" className="px-10 py-4 rounded-xl glass text-foreground font-bold text-base flex items-center gap-2 hover:border-accent/50 transition-all">
+              <Link to="/work" className="px-10 py-4 rounded-xl bg-[hsl(260,25%,8%)]/40 backdrop-blur-xl border border-[hsl(260,20%,15%)]/50 text-[hsl(0,0%,98%)] font-bold text-base flex items-center gap-2 hover:border-accent/50 transition-all">
                 View Our Work <ArrowUpRight size={16} />
               </Link>
             </motion.div>
@@ -108,9 +108,9 @@ const Index = () => {
             {/* Metrics strip — card style */}
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.9 }} className="flex flex-wrap justify-center gap-4 md:gap-6">
               {metrics.map((m, i) => (
-                <motion.div key={i} initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 1 + i * 0.1 }} className="glass rounded-xl px-6 py-4 text-center min-w-[120px]">
+                <motion.div key={i} initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 1 + i * 0.1 }} className="bg-[hsl(260,25%,8%)]/40 backdrop-blur-xl border border-[hsl(260,20%,15%)]/50 rounded-xl px-6 py-4 text-center min-w-[120px]">
                   <div className="font-display text-2xl md:text-3xl font-bold gradient-text-yellow">{m.value}</div>
-                  <div className="text-xs text-muted-foreground mt-1">{m.label}</div>
+                  <div className="text-xs text-[hsl(260,10%,60%)] mt-1">{m.label}</div>
                 </motion.div>
               ))}
             </motion.div>
@@ -118,7 +118,7 @@ const Index = () => {
         </div>
 
         <motion.div animate={{ y: [0, 10, 0] }} transition={{ duration: 2, repeat: Infinity }} className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10">
-          <div className="w-6 h-10 rounded-full border-2 border-muted-foreground/30 flex items-start justify-center p-1.5">
+          <div className="w-6 h-10 rounded-full border-2 border-[hsl(260,10%,60%)]/30 flex items-start justify-center p-1.5">
             <motion.div animate={{ y: [0, 12, 0] }} transition={{ duration: 2, repeat: Infinity }} className="w-1.5 h-1.5 rounded-full bg-accent" />
           </div>
         </motion.div>

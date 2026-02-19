@@ -9,28 +9,28 @@ import novabrandImage from "@/assets/work-novabrand.jpg";
 
 const caseStudies = [
   {
-    title: "TechFlow SaaS", category: "SEO + Content", image: techflowImage,
+    title: "TechVista SaaS", category: "SEO + Content", image: techflowImage,
     challenge: "Low organic traffic and poor search visibility in a crowded SaaS market.",
     strategy: "Full-funnel content strategy with technical SEO overhaul and link building.",
     result: "+340% organic traffic in 6 months",
     metrics: [{ value: "340%", label: "Traffic Growth" }, { value: "#1", label: "For 40+ Keywords" }, { value: "12x", label: "Organic ROI" }],
-    testimonial: { text: "MB Global transformed our digital presence completely.", author: "Sarah Chen, CEO" },
+    testimonial: { text: "MB Global transformed our digital presence completely.", author: "Rajesh Malhotra, CEO" },
   },
   {
-    title: "ScaleUp Fintech", category: "Google Ads + CRO", image: scaleupImage,
+    title: "ScaleUp India Fintech", category: "Google Ads + CRO", image: scaleupImage,
     challenge: "High customer acquisition cost and low landing page conversion rates.",
     strategy: "Rebuilt campaign structure with granular targeting and A/B tested landing pages.",
     result: "72% reduction in CAC",
     metrics: [{ value: "72%", label: "CAC Reduction" }, { value: "8.5x", label: "ROAS" }, { value: "3x", label: "Conversions" }],
-    testimonial: { text: "They don't just execute — they innovate.", author: "Marcus Rivera, Founder" },
+    testimonial: { text: "They don't just execute — they innovate.", author: "Anjali Nair, Founder" },
   },
   {
-    title: "NovaBrand D2C", category: "Social Media + Branding", image: novabrandImage,
+    title: "BrandWorks D2C", category: "Social Media + Branding", image: novabrandImage,
     challenge: "Zero brand awareness in a competitive direct-to-consumer market.",
     strategy: "Built distinctive brand identity with viral social media strategy.",
     result: "1M+ impressions in first quarter",
     metrics: [{ value: "1M+", label: "Impressions" }, { value: "50K", label: "New Followers" }, { value: "5x", label: "Social Revenue" }],
-    testimonial: { text: "Every dollar spent delivers measurable impact.", author: "Elena Kowalski, CMO" },
+    testimonial: { text: "Every rupee spent delivers measurable impact.", author: "Vikram Patel, CMO" },
   },
 ];
 
