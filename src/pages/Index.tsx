@@ -1,13 +1,13 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Link } from "react-router-dom";
-import { useRef } from "react";
+import { useRef, lazy, Suspense } from "react";
 import {
   ArrowRight, TrendingUp, Users, Zap, Star,
   Search, Target, Rocket,
   CheckCircle2, ArrowUpRight, Code, Sparkles, Globe, BarChart3, Palette
 } from "lucide-react";
 import { FloatingOrb, SectionWrapper, AnimatedHeading, FadeIn, GlassCard } from "@/components/ui-elements";
-import HeroScene from "@/components/HeroScene";
+const HeroScene = lazy(() => import("@/components/HeroScene"));
 import analyticsImage from "@/assets/homepage-analytics.jpg";
 import teamImage from "@/assets/team-work.jpg";
 import abstractImage from "@/assets/abstract-brand.jpg";
@@ -61,7 +61,9 @@ const Index = () => {
       {/* HERO — Centered content with 3D background */}
       <SectionWrapper className="relative min-h-screen flex items-center pt-20 bg-[hsl(260,20%,5%)]">
         <motion.div ref={heroRef} style={{ y: heroY, opacity: heroOpacity }} className="absolute inset-0 z-0">
-          <HeroScene />
+          <Suspense fallback={<div className="absolute inset-0 bg-[hsl(260,20%,5%)]" />}>
+            <HeroScene />
+          </Suspense>
         </motion.div>
         <div className="absolute inset-0 z-[1] bg-gradient-to-t from-[hsl(260,20%,5%)] via-[hsl(260,20%,5%)]/40 to-[hsl(260,20%,5%)]/20" />
         <div className="absolute inset-0 z-[1] bg-gradient-to-r from-[hsl(260,20%,5%)]/70 via-transparent to-[hsl(260,20%,5%)]/70" />

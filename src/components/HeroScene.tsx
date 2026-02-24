@@ -19,7 +19,8 @@ const WireframeGlobe = () => {
     }
   });
 
-  const wireGeo = useMemo(() => new THREE.IcosahedronGeometry(2, 3), []);
+  // Reduced detail for better performance
+  const wireGeo = useMemo(() => new THREE.IcosahedronGeometry(2, 2), []);
 
   return (
     <Float speed={1.2} rotationIntensity={0.2} floatIntensity={0.8}>
@@ -27,13 +28,13 @@ const WireframeGlobe = () => {
         <mesh ref={meshRef} geometry={wireGeo}>
           <MeshTransmissionMaterial
             backside
-            samples={4}
+            samples={2}
             thickness={0.5}
-            chromaticAberration={0.2}
-            anisotropy={0.3}
-            distortion={0.1}
-            distortionScale={0.2}
-            temporalDistortion={0.1}
+            chromaticAberration={0.1}
+            anisotropy={0.2}
+            distortion={0.05}
+            distortionScale={0.1}
+            temporalDistortion={0.05}
             color="#6d28d9"
             transmission={0.95}
             roughness={0.1}
@@ -62,7 +63,7 @@ const OrbitingSphere = ({ radius, speed, offset, color, size = 0.12 }: { radius:
 
   return (
     <mesh ref={ref}>
-      <sphereGeometry args={[size, 16, 16]} />
+      <sphereGeometry args={[size, 12, 12]} />
       <meshStandardMaterial color={color} emissive={color} emissiveIntensity={1.2} toneMapped={false} />
     </mesh>
   );
@@ -70,7 +71,8 @@ const OrbitingSphere = ({ radius, speed, offset, color, size = 0.12 }: { radius:
 
 const DataStreams = () => {
   const ref = useRef<THREE.Points>(null);
-  const count = 350;
+  // Reduced from 350 to 150 for better performance
+  const count = 150;
 
   const [positions, colors] = useMemo(() => {
     const pos = new Float32Array(count * 3);
@@ -113,19 +115,24 @@ const HeroScene = () => (
   <div className="absolute inset-0 z-0">
     <Canvas
       camera={{ position: [0, 0, 6], fov: 40 }}
-      dpr={[1, 1.5]}
-      gl={{ antialias: true, alpha: true }}
+      dpr={[1, 1.25]}
+      gl={{ 
+        antialias: false, 
+        alpha: true,
+        powerPreference: "high-performance",
+        stencil: false,
+        depth: true
+      }}
+      performance={{ min: 0.5 }}
       style={{ background: "transparent" }}
     >
       <ambientLight intensity={0.2} />
       <pointLight position={[5, 5, 5]} intensity={1.5} color="#7c3aed" />
       <pointLight position={[-4, -2, 4]} intensity={0.8} color="#e9b308" />
-      <spotLight position={[0, 10, 5]} angle={0.25} penumbra={1} intensity={1} color="#a78bfa" castShadow />
       <WireframeGlobe />
       <OrbitingSphere radius={3} speed={0.5} offset={0} color="#e9b308" size={0.15} />
       <OrbitingSphere radius={3.2} speed={0.35} offset={Math.PI * 0.7} color="#7c3aed" size={0.1} />
       <OrbitingSphere radius={2.8} speed={0.65} offset={Math.PI * 1.4} color="#a78bfa" size={0.08} />
-      <OrbitingSphere radius={3.5} speed={0.25} offset={Math.PI * 0.3} color="#e9b308" size={0.06} />
       <DataStreams />
       <Environment preset="night" />
     </Canvas>
